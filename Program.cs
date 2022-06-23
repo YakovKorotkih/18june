@@ -1,12 +1,15 @@
-﻿int a = 1;
-int b = 2;
-int c = 6;
+﻿void PrintAraay(int[,] matrix)
 
-int max = a;
+{
+    for (int i=0; i < matrix.GetLength(0); i++);
+    {
+        for (int j=0; j < matrix.GetLength(0); j++);
+        {
+            Console.Write($"{matrix[i; j]} '");
+        }
+        Console.WriteLine();
+    }
+}
 
-if (a > max) max = a;
-if (b > max) max = b;
-if (c > max) max = c;
-
-Console.Write("max= ");
-Console.WriteLine(max);
+int[,] matrix = new int [3, 4];
+PrintAraay(matrix);
